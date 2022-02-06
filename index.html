@@ -18,7 +18,7 @@
             </h2>
             <label class="name"> Object Name : </label>
             <br>
-            <input type="text" class="input" placeholder="Enter Object Name">
+            <input type="text" id="input" placeholder="Enter Object Name">
             <br>
             <br>
             <button type="button" class="btn btn-success start" onclick="start()"> Start </button>
@@ -27,6 +27,7 @@
             <label id="status" class="btn btn-danger"> Status - Unknown </label>
             <label id="ohno" class="btn btn-warning"> Not Found </label>
         </center>
+        <script src="main.js"> </script>
     </body>
 </html>
 
@@ -57,7 +58,7 @@
         margin-top:10px;
     }
 
-    .input{
+    #input{
         border-radius:10px;
         width:500px;
         height:40px;
@@ -68,9 +69,12 @@
     }
 
     canvas{
-        border-width:5px;
+        border-width:7px;
         border-style:solid;
         border-color:skyblue;
+        border-radius:15px;
         box-shadow:5px 5px 5px rgb(233, 157, 250);
+        margin-left:500px;
+        margin-top:18px;
     }
 </style>
